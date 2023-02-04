@@ -5,7 +5,7 @@ window.addEventListener('load', (e) => {
     checkContent(document)
 
     if (triggered) {
-        const proceed = confirm("page potentially contains triggering content, press OK to proceed or Cancel to redirect to your safe site")
+        const proceed = confirm("this page potentially contains triggering content, press OK to proceed or Cancel to redirect to your safe site")
 
         if (!proceed) {
             window.location.replace("https://www.google.com")
