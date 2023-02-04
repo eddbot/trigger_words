@@ -1,0 +1,17 @@
+{
+    "name": "trigger_warning",
+    "version": "0.0.0.1",
+    "manifest_version": 3,
+    "description": "An extension to reduce exposure to triggering content",
+    "action": {
+        "default_popup": "popup/popup.html"
+    },
+        "content_scripts": [
+        {
+            "matches": [
+              "<all_urls>"
+            ],
+          "js": ["scripts/content.js"]
+        }
+    ]
+}
