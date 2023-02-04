@@ -16,7 +16,6 @@ window.addEventListener('load', (e) => {
 const checkContent = (element) => {
 
     if (element === null) {
-        console.log("we here")
         return false
     }
     const content = element.innerHTML;
